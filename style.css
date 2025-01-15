@@ -21,3 +21,9 @@ body{
   padding-top: 20px;
   border: 3px light green;
 }
+
+.grid-container .grid-item p{
+  padding-left: 20px;
+  padding-top: 50px;
+  border: 3px light blue;
+}
