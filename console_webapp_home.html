@@ -1,2 +1,35 @@
 <!DOCTYPE html>
 
+<!-- automatic display will be
+1. weather
+2. time
+3. to-do list
+4. gcal
+-->
+
+<html lang="en">
+<meta charset="UTF-8">
+<body>
+
+<div class="grid-container">
+  <div class="grid-item">Display 1</div>
+  <div class="grid-item">Display 2</div>
+  <div class="grid-item">Display 3</div>
+  <div class="grid-item">Display 4</div>
+</div>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #eee;
+  padding: 10px;
+}
+</style>
+
+</body>
+</html>
