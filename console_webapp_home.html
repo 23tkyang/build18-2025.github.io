@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 
-<!-- automatic display will be
+<!-- widget options will be
 1. weather
 2. time
 3. to-do list
 4. gcal
+5. email
+6. bus schedule
+
+THESE REQUIRE SOUND
+7. study-mode music
+8. alarm clock
 -->
 
 <html lang="en">
@@ -13,6 +19,8 @@
 
 <div class="grid-container">
   <div class="grid-item">Display 1</div>
+  <p>Left arrow: <i class="arrow left"></i></p>
+  <p>Right arrow: <i class="arrow right"></i></p>
   <div class="grid-item">Display 2</div>
   <div class="grid-item">Display 3</div>
   <div class="grid-item">Display 4</div>
@@ -31,6 +39,37 @@
   padding: 10px;
 }
 </style>
+
+<style>
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+</style>
+
+
 
 </body>
 </html>
